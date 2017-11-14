@@ -17,13 +17,13 @@
 
   "items": {
     "CONVERT": {
-      "title": { "default": "Convert" },
-      "iconImageUrl": "icons/request.png",
+      "title": { "default": "Convert to PDF" },
+      "iconImageUrl": "https://techmikael.sharepoint.com/SiteAssets/pdf-convert.png",
       "type": "command"
     },
     "DOWNLOAD": {
-      "title": { "default": "Download" },
-      "iconImageUrl": "icons/cancel.png",
+      "title": { "default": "Download as PDF" },
+      "iconImageUrl": "https://techmikael.sharepoint.com/SiteAssets/pdf-download.png",
       "type": "command"
     }
   }

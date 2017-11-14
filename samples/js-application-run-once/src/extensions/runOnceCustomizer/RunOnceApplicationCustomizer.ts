@@ -22,9 +22,9 @@ export default class RunOnceApplicationCustomizer
     }
 
     private async DoWork(data: string) {
-        Dialog.alert(data);
+        //Dialog.alert(data);
         // use await if you want to block the dialog before continue
-        //await Dialog.alert(data);
+        await Dialog.alert(data);
 
         window.setTimeout(async () => {
             console.log("We have waited...");

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<pnp:Provisioning 
+    xmlns:pnp="http://schemas.dev.office.com/PnP/2017/05/ProvisioningSchema">
+    <pnp:Preferences Generator="OfficeDevPnP.Core, Version=2.19.1710.0, Culture=neutral, PublicKeyToken=null" />
+    <pnp:Templates ID="CONTAINER-TEMPLATE-RUN-ONCE-SAMPLE">
+        <pnp:ProvisioningTemplate ID="TEMPLATE-RUN-ONCE-SAMPLE" Version="1" BaseSiteTemplate="GROUP#0" Scope="RootSite">
+            <pnp:CustomActions>
+                <pnp:SiteCustomActions>
+                    <pnp:CustomAction
+                        Title="RunOnceApplicationCustomizer"
+                        Name="RunOnceApplicationCustomizer"
+                        Location="ClientSideExtension.ApplicationCustomizer"
+                        ClientSideComponentId="205392f2-f511-49b0-a698-a976a8f8028a"
+                        ClientSideComponentProperties="{&quot;property&quot;:&quot;Sig call - Hi Vesa!&quot;}" />
+                </pnp:SiteCustomActions>
+            </pnp:CustomActions>
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>
