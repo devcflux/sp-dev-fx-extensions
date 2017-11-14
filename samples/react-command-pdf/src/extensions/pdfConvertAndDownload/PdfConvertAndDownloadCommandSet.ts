@@ -11,7 +11,6 @@ import ConvertDialog from './components/ConvertDialog';
 import DownloadDialog from './components/DownloadDialog';
 import { IPayload } from './components/IPayload';
 
-let _lastId = "";
 export interface IPdfConvertAndDownloadCommandSetProperties {
     // This is an example; replace with your own properties
     sampleTextOne: string;
@@ -33,11 +32,7 @@ export default class PdfConvertAndDownloadCommandSet extends BaseListViewCommand
         let showCommand = false;
         if (event.selectedRows.length === 1) {
             let item = event.selectedRows[0];
-            let itemId = item.getValueByName("ID");
-            if (_lastId === itemId) { return; }
-            _lastId = itemId;
-
-            //let isFolder = item.getValueByName("FSObjType") === "1";
+            //let itemId = item.getValueByName("ID");
 
             let ext = item.getValueByName("File_x0020_Type");
             if (this.endsWithAny(["csv", "doc", "docx", "odp", "ods", "odt", "pot", "potm", "potx", "pps", "ppsx", "ppsxm", "ppt", "pptm", "pptx", "rtf", "xls", "xlsx"], ext)) {
