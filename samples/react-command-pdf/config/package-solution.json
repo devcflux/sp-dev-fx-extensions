@@ -1,0 +1,12 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "react-command-pdf-client-side-solution",
+    "id": "60f56a78-900f-4359-93e0-a13b8e05c21f",
+    "version": "1.0.0.0",
+    "skipFeatureDeployment": true
+  },
+  "paths": {
+    "zippedPackage": "solution/react-command-pdf.sppkg"
+  }
+}

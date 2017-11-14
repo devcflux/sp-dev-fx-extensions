@@ -1,0 +1,18 @@
+{
+  "$schema": "https://dev.office.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "pdf-convert-and-download-command-set": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/pdfConvertAndDownload/PdfConvertAndDownloadCommandSet.js",
+          "manifest": "./src/extensions/pdfConvertAndDownload/PdfConvertAndDownloadCommandSet.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "PdfConvertAndDownloadCommandSetStrings": "lib/extensions/pdfConvertAndDownload/loc/{locale}.js"
+  }
+}
